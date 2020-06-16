@@ -44,7 +44,7 @@ class LogicDronesTest {
 
 	
 	/**
-	 * This test consists in evaluate all posibilites to drone direction (Norte, Sur, Oriente, occidente)
+	 * This test consists in evaluate all possibilities to drone direction (Norte, Sur, Oriente, occidente)
 	 * when the letter is are 'I' or 'D'
 	 */
 	@Test
@@ -93,10 +93,18 @@ class LogicDronesTest {
 	}
 
 
-
-	@Test
-	void testPrint_listout_group_dron() {
-		fail("Not yet implemented");
+	/**
+	 * This test consists in evaluate some possibilities cases as a input parameters in the method print_listout_group_dron()
+	 * @param pos
+	 */
+	@ParameterizedTest
+	@ValueSource(ints = {0, 2, 3})
+	void testPrint_listout_group_dron(int pos) {
+		objet_LogicDrones.print_listout_group_dron(pos);
+		assertAll(
+				() ->  assertTrue(pos >= 1 ),
+				() ->  assertTrue(objet_LogicDrones.print_listout_group_dron(pos).length() > 1 )
+			);
 	}
 
 }
