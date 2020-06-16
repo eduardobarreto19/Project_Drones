@@ -87,11 +87,7 @@ class LogicDronesTest {
 		assertEquals(dirExpected8,diractual8 );	
 	}
 
-	@Test
-	void testDeliveries_by_drone() {
-		fail("Not yet implemented");
-	}
-
+	
 
 	/**
 	 * This test consists in evaluate some possibilities cases as a input parameters in the method print_listout_group_dron()

@@ -129,7 +129,6 @@ public class LogicDrones {
 		int pos_ini = 0;
 		int pos_fin = 2;
 		for (int count_group_drones = 0; count_group_drones < 20; count_group_drones++) {
-
 			for (int lines_read = pos_ini; lines_read <= pos_fin; lines_read++) {
 				String delivery_line = listin.get(lines_read); // Read the chain one, for example  "AAAAIAA"
 				char[] letter = delivery_line.toCharArray(); //it convert the String to Char to use character by character
