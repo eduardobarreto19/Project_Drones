@@ -1,6 +1,6 @@
 package ns4.view;
 
-import n4s.controller.LogicDrones;
+import ns4.controller.LogicDrones;
 
 /**
  * 
