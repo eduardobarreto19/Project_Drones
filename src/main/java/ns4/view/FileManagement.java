@@ -55,9 +55,9 @@ public class FileManagement {
 	public void readDeliveryRoutes() {
 		for (int i = 1; i <= 20; i++) { // This is to read 20 files with extension txt
 			if (i <= 9) { // this is to read first 9 files (in01.txt, in02.txt, in03.txt, in04.txt, in05.txt, in06.txt, in07.txt, in08.txt, in09.txt)
-				path = "../InputFiles/in0" + i + ".txt";
+				path = "../Project_Drones/InputFiles/in0" + i + ".txt";
 			} else if (i >= 10) { //This is to read the latest 11 files (in10.txt, in1.txt, in12.txt, in13.txt, in14.txt, in15.txt, in16.txt, in17.txt, in18.txt, in19.txt, in20.txt)
-				path = "../InputFiles/in" + i + ".txt"; //Relative path of the java project 
+				path = "../Project_Drones/InputFiles/in" + i + ".txt"; //Relative path of the java project 
 			}
 			try { // The idea is to use Try Catch so use the common Exceptions when the file is reading
 				reader = new Scanner(new File(path));
@@ -106,9 +106,9 @@ public class FileManagement {
 		int cont = 0; // Storage to move along the 20 positions of the array of String with the expected result 
 		for (int j = 1; j <= 20; j++) {// This  is to write  20 files with extension txt
 			if (j <= 9) { // this is to write first 9 files (out01.txt, out02.txt, out03.txt, out04.txt, out05.txt, out06.txt, out07.txt, out08.txt, out09.txt)
-				path = "../OutputFiles/out0" + j + ".txt"; 
+				path = "../Project_Drones/OutputFiles/out0" + j + ".txt"; 
 			} else if (j >= 10) {//This is to write the latest 11 files (out10.txt, out1.txt, out12.txt, out13.txt, out14.txt, out15.txt, out16.txt, out17.txt, out18.txt, out19.txt, out20.txt)
-				path = "../OutputFiles/out" + j + ".txt";
+				path = "../Project_Drones/OutputFiles/out" + j + ".txt";
 			}
 			linesOut = mainClass.getClasLogica().print_listout_group_dron(cont);//This is an important line, because it bring to array of String with the expected result after the logical approach to the program
 			Writer out = null;
