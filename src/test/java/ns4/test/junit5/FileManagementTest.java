@@ -6,10 +6,15 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
+
+import ns4.view.FileManagement;
+
 import org.junit.jupiter.api.BeforeEach;
 
 class FileManagementTest {
-
+	
+	FileManagement objeto = new FileManagement(null);
+	
 	/**
 	 * The test case is to verify the folder where the input files were storage .
 	 * The directory is "InputFiles"
