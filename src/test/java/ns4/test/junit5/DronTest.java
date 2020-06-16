@@ -2,14 +2,20 @@ package ns4.test.junit5;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import ns4.model.Dron;
 
 class DronTest {
 
-	Dron objectoDron_test = new Dron();
+	static Dron objectoDron_test;
 	
+	@BeforeAll
+    static void init() {
+        System.out.println("Create a object for test");
+        objectoDron_test = new Dron();
+    }
 	
 	/**
 	 * This test consists in evaluating the default values declared in the constructor of the class Drone when it is created a object of this class
