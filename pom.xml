@@ -5,4 +5,28 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Project_Drones</name>
   <description>Project Java and Junit5</description>
+  
+  <properties>
+		<java.version>1.8</java.version>
+		<junit-jupiter.version>5.5.2</junit-jupiter.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<!-- junit 5 -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${junit-jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>${junit-jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
 </project>
